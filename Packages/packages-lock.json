@@ -8,8 +8,8 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       }
     },
-    "com.amrit.statemachine": {
-      "version": "file:com.amrit.statemachine",
+    "com.amrit.statemachinesystem": {
+      "version": "file:com.amrit.statemachinesystem",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
