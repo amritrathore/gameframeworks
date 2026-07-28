@@ -1,14 +1,17 @@
 using System;
 
-public interface ISaveProvider
+namespace Amrit.SaveSystem
 {
-    void Save(string key, object data, Type type);
+    public interface ISaveProvider
+    {
+        void Save(string key, object data, Type type);
 
-    object Load(string key, Type type);
+        object Load(string key, Type type);
 
-    bool Exists(string key);
+        bool Exists(string key);
 
-    void Delete(string key);
+        void Delete(string key);
 
-    void DeleteAll();
+        void DeleteAll();
+    }
 }

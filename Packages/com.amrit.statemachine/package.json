@@ -1,0 +1,10 @@
+{
+  "name": "com.amrit.statemachine",
+  "version": "1.0.0",
+  "displayName": "State Machine System",
+  "description": "State Machine System for Unity.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Amrit Rathore"
+  }
+}

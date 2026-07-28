@@ -1,12 +1,15 @@
 using System;
 
-public interface ISaveable
+namespace Amrit.SaveSystem
 {
-    string SaveKey { get; }
+    public interface ISaveable
+    {
+        string SaveKey { get; }
 
-    object CaptureState();
+        object CaptureState();
 
-    void RestoreState(object state);
+        void RestoreState(object state);
 
-    Type StateType { get; }
+        Type StateType { get; }
+    }
 }

@@ -1,8 +1,11 @@
 using System;
 
-public interface ISaveSerializer
+namespace Amrit.SaveSystem
 {
-    string Serialize(object data);
+    public interface ISaveSerializer
+    {
+        string Serialize(object data);
 
-    object Deserialize(string json, Type type);
+        object Deserialize(string json, Type type);
+    }
 }
