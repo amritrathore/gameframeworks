@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.core.savesystem": {
-      "version": "file:com.amrit.savesystem",
+      "version": "file:com.core.savesystem",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
@@ -9,7 +9,7 @@
       }
     },
     "com.core.statemachinesystem": {
-      "version": "file:com.amrit.statemachinesystem",
+      "version": "file:com.core.statemachinesystem",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
