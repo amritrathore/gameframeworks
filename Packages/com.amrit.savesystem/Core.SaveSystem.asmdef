@@ -1,0 +1,7 @@
+{
+    "name": "Core.SaveSystem",
+    "rootNamespace": "Core.SaveSystem",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.amrit.savesystem": {
+    "com.core.savesystem": {
       "version": "file:com.amrit.savesystem",
       "depth": 0,
       "source": "embedded",
@@ -8,7 +8,7 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       }
     },
-    "com.amrit.statemachinesystem": {
+    "com.core.statemachinesystem": {
       "version": "file:com.amrit.statemachinesystem",
       "depth": 0,
       "source": "embedded",

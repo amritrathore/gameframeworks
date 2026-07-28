@@ -1,4 +1,4 @@
-namespace Amrit.StateMachineSystem
+namespace Core.StateMachineSystem
 {
     public abstract class State<T> : IState
     {

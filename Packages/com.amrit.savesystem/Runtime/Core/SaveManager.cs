@@ -1,6 +1,6 @@
 using System;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class SaveManager
     {

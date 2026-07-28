@@ -1,6 +1,6 @@
 using System;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     [Serializable]
     public sealed class SaveFile

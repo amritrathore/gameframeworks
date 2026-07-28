@@ -1,12 +1,10 @@
-using Game.Events;
-
-namespace Amrit.StateMachineSystem
+namespace Core.StateMachineSystem
 {
     public class StateMachine
     {
         public IState CurrentState { get; private set; }
 
-        public void ChangeState(IState nextState)
+        public virtual void ChangeState(IState nextState)
         {
             if (CurrentState == nextState)
                 return;
@@ -16,8 +14,6 @@ namespace Amrit.StateMachineSystem
             CurrentState = nextState;
 
             CurrentState.Enter();
-
-            EventDispatcher.Dispatch<GameStateChangedEvent>(new GameStateChangedEvent(CurrentState));
         }
 
         public void Tick()

@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class NewtonsoftSerializer : ISaveSerializer
     {

@@ -1,4 +1,4 @@
-namespace Amrit.StateMachineSystem
+namespace Core.StateMachineSystem
 {
     public interface IState
     {

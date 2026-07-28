@@ -1,4 +1,4 @@
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class SaveContext
     {

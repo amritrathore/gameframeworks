@@ -1,0 +1,7 @@
+{
+    "name": "Core.StateMachineSystem",
+    "rootNamespace": "Core.StateMachineSystem",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

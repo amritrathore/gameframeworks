@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class JsonSaveSerializer : ISaveSerializer
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     [Flags]
     public enum SaveOptions

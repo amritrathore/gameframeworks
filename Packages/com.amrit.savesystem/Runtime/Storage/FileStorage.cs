@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class FileStorage : IStorageBackend
     {

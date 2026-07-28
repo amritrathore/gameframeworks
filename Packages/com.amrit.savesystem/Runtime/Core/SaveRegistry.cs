@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public sealed class SaveRegistry
     {

@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace Amrit.SaveSystem
+namespace Core.SaveSystem
 {
     public static class SavePath
     {
