@@ -1,0 +1,13 @@
+{
+  "name": "com.core.popupsystem",
+  "version": "1.0.0",
+  "displayName": "Popup System",
+  "description": "Popup for Unity.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Amrit Rathore"
+  },
+  "dependencies": {
+    "com.unity.ugui": "1.0.0"
+  }
+}
