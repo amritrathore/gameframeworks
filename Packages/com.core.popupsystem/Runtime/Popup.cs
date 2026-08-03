@@ -1,11 +1,11 @@
+using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Core.PopupSystem
 {
     public abstract class Popup : MonoBehaviour, IPopup
     {
-        public string Name => this.GetType().Name;
+        public Type Name => this.GetType();
         [SerializeField] protected Canvas canvas;
         [SerializeField] protected CanvasGroup canvasGroup;
 
@@ -26,5 +26,7 @@ namespace Core.PopupSystem
             canvasGroup.alpha = active ? 1 : 0;
             canvasGroup.blocksRaycasts = active;
         }
+
+        public virtual void Refresh() { }
     }
 }
