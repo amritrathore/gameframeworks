@@ -10,7 +10,7 @@ namespace Core.PopupSystem
         [SerializeField] protected Canvas canvas;
         [SerializeField] protected CanvasGroup canvasGroup;
         [SerializeField] protected Button closeButton;
-        private PopupController popupController;
+        protected PopupController popupController;
 
         public virtual void Init(PopupController controller)
         {
