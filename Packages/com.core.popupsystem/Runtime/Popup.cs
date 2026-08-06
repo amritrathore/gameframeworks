@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Core.PopupSystem
 {
@@ -8,14 +9,23 @@ namespace Core.PopupSystem
         public Type Name => this.GetType();
         [SerializeField] protected Canvas canvas;
         [SerializeField] protected CanvasGroup canvasGroup;
+        [SerializeField] protected Button closeButton;
+        private PopupController popupController;
+
+        public virtual void Init(PopupController controller)
+        {
+            popupController = controller;
+        }
 
         public virtual void Show(object data, int layer)
         {
             SetActive(true);
+            closeButton.onClick.AddListener(OnClose);
         }
 
         public virtual void Hide()
         {
+            closeButton.onClick.RemoveListener(OnClose);
             SetActive(false);
         }
 
@@ -28,5 +38,10 @@ namespace Core.PopupSystem
         }
 
         public virtual void Refresh() { }
+
+        protected virtual void OnClose()
+        {
+            popupController.Hide();
+        }
     }
 }

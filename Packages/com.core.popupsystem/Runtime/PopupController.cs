@@ -29,10 +29,12 @@ namespace Core.PopupSystem
 
             foreach (Popup popup in popups)
             {
-                if (!popupKeyvaluepairs.TryAdd(popup.Name, popup))
+                if (popupKeyvaluepairs.TryAdd(popup.Name, popup))
                 {
-                    Debug.LogError($"Duplicate popup name: {popup.Name}");
+                    popup.Init(this);
                 }
+                else
+                    Debug.LogError($"Duplicate popup name: {popup.Name}");
             }
         }
 
