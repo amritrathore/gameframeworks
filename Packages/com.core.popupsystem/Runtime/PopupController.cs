@@ -75,8 +75,11 @@ namespace Core.PopupSystem
             }
             currentPopup.Hide();
 
-            currentPopup = popupStack.Pop();
-            currentPopup?.Refresh();
+            if (popupStack.Count > 0)
+            {
+                currentPopup = popupStack.Pop();
+                currentPopup?.Refresh();
+            }
         }
 
         public virtual void HideAll()
