@@ -70,7 +70,7 @@ namespace Core.PopupSystem
         {
             if (currentPopup == null)
             {
-                Debug.LogError("current popup is null");
+                Debug.Log("current popup is null");
                 return;
             }
             currentPopup.Hide();
