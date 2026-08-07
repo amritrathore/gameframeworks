@@ -1,0 +1,10 @@
+{
+  "name": "com.core.slotsystem",
+  "version": "1.0.0",
+  "displayName": "Slot System",
+  "description": "Slot System for Unity.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Amrit Rathore"
+  }
+}

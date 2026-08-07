@@ -16,6 +16,12 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       }
     },
+    "com.core.slotsystem": {
+      "version": "file:com.core.slotsystem",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.core.statemachinesystem": {
       "version": "file:com.core.statemachinesystem",
       "depth": 0,
