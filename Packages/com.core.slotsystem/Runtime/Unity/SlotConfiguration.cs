@@ -4,7 +4,7 @@ namespace Core.SlotSystem.Unity
 {
     [CreateAssetMenu(
         fileName = "SlotConfiguration",
-        menuName = "Amrit/Slot System/Slot Configuration")]
+        menuName = "Core/Slot System/Slot Configuration")]
     public sealed class SlotConfiguration : ScriptableObject
     {
         [Header("Slot Configuration")]
