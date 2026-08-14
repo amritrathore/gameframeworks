@@ -19,7 +19,7 @@ namespace Core.PopupSystem
 
         public virtual void Show(object data, int layer)
         {
-            SetActive(true);
+            SetActive(true, layer);
             closeButton.onClick.AddListener(OnClose);
         }
 
@@ -29,12 +29,13 @@ namespace Core.PopupSystem
             SetActive(false);
         }
 
-        private void SetActive(bool active)
+        private void SetActive(bool active, int layer = 0)
         {
             gameObject.SetActive(active);
             canvas.enabled = active;
             canvasGroup.alpha = active ? 1 : 0;
             canvasGroup.blocksRaycasts = active;
+            canvas.sortingOrder = layer;
         }
 
         public virtual void Refresh() { }
