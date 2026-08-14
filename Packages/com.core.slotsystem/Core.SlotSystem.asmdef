@@ -1,7 +1,9 @@
 {
     "name": "Core.SlotSystem",
     "rootNamespace": "Core.SlotSystem",
-    "references": [],
+    "references": [
+        "GUID:b4f321826317ac64fa24141d26dd99aa"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

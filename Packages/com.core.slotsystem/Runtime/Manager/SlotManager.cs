@@ -1,14 +1,13 @@
 using System;
+using Core.SaveSystem;
 
 namespace Core.SlotSystem
 {
-    public sealed class SlotManager
+    public sealed class SlotManager : ISaveable
     {
         private readonly SlotCollection slots;
 
         private int selectedSlotIndex = -1;
-
-        private readonly ISlotStorage storage;
 
         public event Action<Slot> SlotChanged;
 
@@ -36,16 +35,17 @@ namespace Core.SlotSystem
             }
         }
 
+        public string SaveKey => "SlotSystem";
+
+        public Type StateType => typeof(SlotSaveData);
+
         public SlotManager(
-            SlotCollection slots,
-            ISlotStorage storage = null)
+            SlotCollection slots)
         {
             this.slots =
                 slots ??
                 throw new ArgumentNullException(
                     nameof(slots));
-
-            this.storage = storage;
         }
 
         public bool Assign(
@@ -59,8 +59,6 @@ namespace Core.SlotSystem
 
             SlotChanged?.Invoke(slot);
 
-            Save();
-
             return true;
         }
 
@@ -72,8 +70,6 @@ namespace Core.SlotSystem
                 return false;
 
             SlotChanged?.Invoke(slot);
-
-            Save();
 
             return true;
         }
@@ -95,8 +91,6 @@ namespace Core.SlotSystem
             SlotUnlocked?.Invoke(slot);
             SlotChanged?.Invoke(slot);
 
-            Save();
-
             return true;
         }
 
@@ -111,8 +105,6 @@ namespace Core.SlotSystem
 
             SlotSelected?.Invoke(slotIndex);
 
-            Save();
-
             return true;
         }
 
@@ -124,8 +116,6 @@ namespace Core.SlotSystem
             Slot slot = slots.Get(slots.Count - 1);
 
             SlotAdded?.Invoke(slot);
-
-            Save();
 
             return true;
         }
@@ -140,41 +130,23 @@ namespace Core.SlotSystem
 
             SlotRemoved?.Invoke(slots.Count);
 
-            Save();
-
             return true;
         }
 
-        public void Save()
+        public object CaptureState()
         {
-            if (storage == null)
-                return;
-
             SlotSaveData data =
                 SlotSaveData.Create(
                     slots,
                     selectedSlotIndex);
 
-            storage.Save(data);
+            return data;
         }
 
-        public void Load()
+        public void RestoreState(object state)
         {
-            if (storage == null)
-                return;
+            SlotSaveData data = (SlotSaveData)state;
 
-            SlotSaveData data =
-                storage.Load();
-
-            if (data == null)
-                return;
-
-            Restore(data);
-        }
-
-        public void Restore(
-            SlotSaveData data)
-        {
             if (data == null)
                 return;
 

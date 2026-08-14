@@ -20,7 +20,9 @@
       "version": "file:com.core.slotsystem",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.core.savesystem": "1.0.0"
+      }
     },
     "com.core.statemachinesystem": {
       "version": "file:com.core.statemachinesystem",
