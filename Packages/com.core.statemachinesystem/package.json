@@ -1,6 +1,6 @@
 {
   "name": "com.core.statemachinesystem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "State Machine System",
   "description": "State Machine System for Unity.",
   "unity": "2022.3",
