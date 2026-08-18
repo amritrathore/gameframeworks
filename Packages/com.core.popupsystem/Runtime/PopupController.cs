@@ -14,7 +14,7 @@ namespace Core.PopupSystem
 
         public bool IsInitialized { get; private set; } = false;
 
-        private void Init()
+        public void Init()
         {
             if (IsInitialized)
                 return;
