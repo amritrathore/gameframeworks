@@ -35,6 +35,7 @@ namespace Core.PopupSystem
             canvas.enabled = active;
             canvasGroup.alpha = active ? 1 : 0;
             canvasGroup.blocksRaycasts = active;
+            canvasGroup.interactable = active;
             canvas.sortingOrder = layer;
         }
 

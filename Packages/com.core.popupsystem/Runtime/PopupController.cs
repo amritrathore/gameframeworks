@@ -32,6 +32,7 @@ namespace Core.PopupSystem
                 if (popupKeyvaluepairs.TryAdd(popup.Name, popup))
                 {
                     popup.Init(this);
+                    popup.Hide();
                 }
                 else
                     Debug.LogError($"Duplicate popup name: {popup.Name}");
