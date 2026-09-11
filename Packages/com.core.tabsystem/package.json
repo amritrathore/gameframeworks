@@ -1,0 +1,9 @@
+{
+  "name": "com.core.tabsystem",
+  "version": "1.0.0",
+  "displayName": "Tab System",
+  "description": "Generic, composable UI tab selection with optional uGUI components.",
+  "unity": "2022.3",
+  "author": { "name": "Amrit Rathore" },
+  "dependencies": { "com.unity.ugui": "1.0.0" }
+}

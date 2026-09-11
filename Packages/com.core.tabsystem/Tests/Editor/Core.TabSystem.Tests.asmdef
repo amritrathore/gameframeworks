@@ -1,0 +1,8 @@
+{
+  "name": "Core.TabSystem.Tests",
+  "rootNamespace": "Core.TabSystem.Tests",
+  "references": ["Core.TabSystem"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

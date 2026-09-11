@@ -21,7 +21,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.core.savesystem": "1.0.0"
+        "com.core.savesystem": "1.0.1"
       }
     },
     "com.core.statemachinesystem": {

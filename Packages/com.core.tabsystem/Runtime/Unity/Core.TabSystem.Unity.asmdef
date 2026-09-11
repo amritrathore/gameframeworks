@@ -1,0 +1,5 @@
+{
+  "name": "Core.TabSystem.Unity",
+  "rootNamespace": "Core.TabSystem.Unity",
+  "references": ["Core.TabSystem", "Unity.ugui"]
+}
